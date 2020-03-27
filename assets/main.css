@@ -5,8 +5,19 @@
           box-sizing: border-box;
 }
 
+::-moz-selection {
+  background: #eec40b;
+  color: #111;
+}
+
+::selection {
+  background: #eec40b;
+  color: #111;
+}
+
 html {
   font-family: sans-serif;
+  line-height: 1.6;
   background: #222;
 }
 
