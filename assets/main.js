@@ -4,7 +4,7 @@ let addedWord = '';
 const renderHtml = () => {
   app.innerHTML = /*html*/ `
     <div class="container" style="cursor:pointer;background:#444;padding:1.2rem;">
-      <p style="font-size:1.2rem;">Hello from the front end JavaScript<span style="color:#eec40b">${addedWord}</span></p>
+      <p style="font-size:1.2rem;">Hello from the front end JavaScript<span style="color:#eec40b; font-size:1.5rem;">${addedWord}</span>!</p>
     </div>
   `;
 };
