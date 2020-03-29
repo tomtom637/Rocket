@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const PORT = process.env.PORT || 3737;
+const http = require('http').Server(app);
 
 // Set pug as the View Engine
 app.set('view engine', 'pug');
@@ -12,7 +12,10 @@ app.use(express.urlencoded({ extended: true }));
 // We set the directory for our static files
 app.use(express.static('assets'));
 
-// Routes
+// Routes - referencing the routes folder
 app.use('/', require('./routes/index'));
+app.use('/game', require('./routes/game'));
 
-app.listen(PORT, console.log(`Listening on port ${PORT}`));
+const server = http.listen(process.env.PORT || 3737, () => {
+  console.log('server is running on port', server.address().port);
+});

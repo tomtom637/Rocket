@@ -10,16 +10,45 @@
 }
 
 html {
-  font-family: sans-serif;
-  line-height: 1.6;
-  background: #222;
+  background: linear-gradient(
+    135deg,
+    rgb(50, 52, 56) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background-size: cover;
+  font-family: 'consolas', monospace;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+canvas {
+  display: block;
+  margin: auto;
 }
 
 .container {
   color: #eee;
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 3rem;
   margin: 0 auto;
   max-width: 950px;
   text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+  padding: 1rem;
+}
+
+.tips {
+  color: #aaa;
+  margin: auto;
+  margin-top: 2.5rem;
+  font-size: 1.1rem;
 }

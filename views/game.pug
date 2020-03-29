@@ -1,0 +1,11 @@
+extends layout.pug
+block content
+  .container
+    include includes/nav.pug
+    h1.title Let's play the Game
+    p #{awesomeParagraph}
+  script(src="game/hero.js")
+  script(src="game/card.js")
+  script(src="game/deck.js")
+  script(src="game/game.js")
+  script(src="game/terminal.js")

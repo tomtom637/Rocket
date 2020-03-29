@@ -1,7 +1,18 @@
 extends layout.pug
 block content
+
   .container
-    h1 Welcome to Rocket
+    include includes/nav.pug
+    h1.title Welcome to Rocket
     p #{awesomeParagraph}
-  #app
-  script(src="main.js")
+    p(class="tips") use the left and right arrows to move about
+  div(class="modal" style="width:100;")
+  script(src="brick-breaker-master/p5.js")
+  script(src="brick-breaker-master/p5.dom.min.js")
+  script(src="brick-breaker-master/p5.sound.min.js")
+  script(src="brick-breaker-master/levels.js")
+  script(src="brick-breaker-master/sketch.js")
+  script(src="brick-breaker-master/Paddle.js")
+  script(src="brick-breaker-master/Ball.js")
+  script(src="brick-breaker-master/Brick.js")
+  script(src="brick-breaker-master/ballLogic.js")

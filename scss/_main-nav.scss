@@ -1,0 +1,24 @@
+.main-nav {
+  text-align: left;
+
+  ul {
+    list-style: none;
+    margin-bottom: 2.5rem;
+  }
+
+  li {
+    margin-right: 1.5rem;
+    display: inline;
+  }
+
+  a {
+    color: #eec40b;
+    font-size: 1.3rem;
+    text-decoration: none;
+    padding-bottom: 0.5rem;
+  }
+
+  .active {
+    border-bottom: 10px solid rgba(238, 196, 11, 0.158);
+  }
+}

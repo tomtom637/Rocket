@@ -16,16 +16,74 @@
 }
 
 html {
-  font-family: sans-serif;
-  line-height: 1.6;
-  background: #222;
+  background: linear-gradient(135deg, #323438 0%, black 100%);
+  background-size: cover;
+  font-family: 'consolas', monospace;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+canvas {
+  display: block;
+  margin: auto;
 }
 
 .container {
   color: #eee;
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 3rem;
   margin: 0 auto;
   max-width: 950px;
   text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+  padding: 1rem;
+}
+
+.tips {
+  color: #aaa;
+  margin: auto;
+  margin-top: 2.5rem;
+  font-size: 1.1rem;
+}
+
+.main-nav {
+  text-align: left;
+}
+
+.main-nav ul {
+  list-style: none;
+  margin-bottom: 2.5rem;
+}
+
+.main-nav li {
+  margin-right: 1.5rem;
+  display: inline;
+}
+
+.main-nav a {
+  color: #eec40b;
+  font-size: 1.3rem;
+  text-decoration: none;
+  padding-bottom: 0.5rem;
+}
+
+.main-nav .active {
+  border-bottom: 10px solid rgba(238, 196, 11, 0.158);
 }
